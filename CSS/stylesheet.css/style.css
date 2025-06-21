@@ -1,0 +1,271 @@
+/*
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+*/
+
+/* ELEMENT SELECTOR*/
+
+p{
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button{
+    background-color:orange;       
+    color: black;
+}
+
+
+
+/* CLASS SELECTOR*/
+
+.PARA{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: salmon;
+    background-color: bisque;
+    font-size: larger;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    line-height: 50px;
+    text-transform: lowercase;
+    text-decoration: line-through;
+}
+
+.PARA1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #875282;
+    background-color: aquamarine;
+}
+.smtg{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    color:rgb(205, 226, 15);
+}
+
+
+/*ID SELECTOR*/
+
+#para-id{
+    font-family:'Cardo', serif ;
+    color:forestgreen ;
+}
+
+
+
+/* UNIVERSAL SELECTOR*/
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: lavender; 
+   
+}
+
+button:hover {
+    font-style: italic;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    background-color: black;
+    color: white;
+    border: 2px gold;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px 5px springgreen;
+    cursor: pointer;
+    transform: scale(1.1);
+    transform: rotate(2deg);
+    transition: all 0.3s ease;
+    opacity: 0.7;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.PARA:hover {
+    color: white;
+    text-decoration: none;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    background: linear-gradient(to right,orange,black);
+    color: lawngreen;
+    
+}
+a{
+    position: relative;
+    text-decoration: none;
+    color: brown;
+    font-size: medium;
+
+}
+a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: cornflowerblue;
+    transition: width 0.3s ease-in-out;
+}
+
+a:hover::after{
+    width: 100%;
+}
+
+
+/* Disable global underline */
+.sub7 a::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* 7th Subdivision - Diagonal Wipe Hover Effect */
+.sub7 a {
+  position: relative;
+  display: inline-block;
+  color: #0c0d0e;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 20px;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.sub7 a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background-color: #b9b94a;
+  transform: skewX(-30deg);
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.sub7 a:hover::before {
+  left: 100%;
+}
+
+.sub7 a:hover {
+  color: rgb(233, 12, 12);
+}
+
+/*
+| Line                           | What It Does                                                                                                      |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
+| `position: relative;`          | Sets the anchor (`<a>`) as a reference for the pseudo-element (`::before`) to be absolutely positioned inside it. |
+| `display: inline-block;`       | Allows the element to behave like a block while staying inline — useful for padding & effects.                    |
+| `color: #0b3d91;`              | Sets the text color to a deep blue.                                                                               |
+| `font-size: 20px;`             | Makes the link text larger.                                                                                       |
+| `text-decoration: none;`       | Removes the default underline.                                                                                    |
+| `padding: 10px 20px;`          | Adds spacing inside the link, making it easier to hover and look like a button.                                   |
+| `overflow: hidden;`            | Hides anything that spills outside the link — needed for the sliding `::before` effect.                           |
+| `z-index: 1;`                  | Places the link **above** the background layer created by `::before`.                                             |
+| `transition: color 0.3s ease;` | Smooth transition when text color changes on hover.                                                               |
+*/
+
+
+
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Common box styles */
+div {
+  padding: 15px;
+  margin: 10px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* 1. Static (default) */
+.static {
+  background-color: gray;
+  position: static;
+}
+
+/* 2. Relative */
+.relative {
+  background-color: orange;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+/* 3. Absolute (inside outer) */
+.outer {
+  position: relative;
+  height: 100px;
+  background-color: lightgray;
+}
+
+.absolute {
+  background-color: teal;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* 4. Sticky */
+.sticky {
+  background-color: purple;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+/* 5. Fixed */
+.fixed {
+  background-color: crimson;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+}
+
+/* Filler to make scrollable page */
+.filler {
+  height: 800px;
+  background: lightyellow;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;;
+}
+
+h1 {
+  font-family: 'Cardo', serif;
+  
+}
+*/
+
+
