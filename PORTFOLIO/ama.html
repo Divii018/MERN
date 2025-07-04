@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASK ME ANYTHING</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="PORTFOLIO\style.css">
+
+</head>
+<body>
+
+    <div class="2xl:container mx-auto">
+        <div class="w-[90%] lg:w-[65%] mx-auto">
+            <div  class="flex justify-between items-center">
+                <div >
+                    <h1 class="font-[Lato] text-[28px] font-semibold">
+                        My Portfolio
+                    </h1>
+                    <p class="font-[Lato] text-[24px] font-medium">
+                        Divya
+                    </p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                    class="lucide lucide-bell-icon lucide-bell"><path d="M10.268 21a2 2 0 0 0 3.464 0"/>
+                    <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6
+                    8c0 4.499-1.411 5.956-2.738 7.326"/></svg>
+                </div>
+            </div>
+
+
+             <div class="bg-white py-5 my-8 shadow-lg rounded-full hidden lg:block"> 
+                <ul class="flex justify-around">
+                    <li class="font-[Lato] text-sm md:text-lg lg:text-[20px] font-medium "><a href="index.html">Home</a></li>
+                    <li class="font-[Lato] text-sm md:text-lg lg:text-[20px] font-medium "><a href="about.html">About</a></li>
+                    <li class="font-[Lato] text-sm md:text-lg lg:text-[20px] font-medium "><a href="projects.html">Projects</a></li>
+                    <li class="font-[Lato] text-sm md:text-lg lg:text-[20px] font-medium "><a href="resume.html"></a>Resume</li>
+                    <li class="font-[Lato] text-sm md:text-lg lg:text-[20px] font-medium "><a href="tools.html"></a>Tools</li>
+                    <li class="font-[Lato] text-sm md:text-lg lg:text-[20px] font-medium "><a href="ama.html"></a>Ama</li>
+                </ul>
+            </div>
+
+<!--
+           
+            <div>
+                <form>
+                    
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="">
+                    </div>
+
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="">
+                    </div>
+
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea  name="message" id="">
+                    </div>
+                    
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+-->
+
+
+<form class="bg-white p-6 rounded shadow-md w-80">
+    <div class="mb-4">
+      <label class="block mb-1 text-gray-800 font-semibold" for="email">Email:</label>
+      <input type="email" id="email" class="w-full border border-black p-2" required>
+    </div>
+
+    <div class="mb-4">
+      <label class="block mb-1 text-gray-800 font-semibold" for="name">Name:</label>
+      <input type="text" id="name" class="w-full border border-black p-2" required>
+    </div>
+
+    <div class="mb-4">
+      <label class="block mb-1 text-gray-800 font-semibold" for="message">Message:</label>
+      <textarea id="message" rows="3" class="w-full border border-black p-2" required></textarea>
+    </div>
+
+    <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 rounded">
+      Submit
+    </button>
+  </form>
+
+</body>
+</html>

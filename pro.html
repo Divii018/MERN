@@ -4,9 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GRID</title>
-    <script src="pro.css"
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+
+    <div class="h-[200px] bg-black grid grid-cols-2">
+        <div class=" bg-red-200">BOX1</div>
+        <div class=" bg-blue-200">BOX2</div>
+        <div class=" bg-green-200">BOX3</div>
+    </div>
+    <br>
+
+    <div class="h-[200px] bg-black grid grid-cols-3">
+        <div class=" bg-red-200">BOX1</div>
+        <div class=" bg-blue-200">BOX2</div>
+        <div class=" bg-green-200">BOX3</div>
+    </div>
+    <br>
+
+    <div class="h-[200px] grid grid-cols-6">
+        <div class=" bg-red-200 border border-black">BOX1</div>
+        <div class=" bg-blue-200 border border-black">BOX2</div>
+        <div class=" bg-green-200 border border-black">BOX3</div>
+        <div class=" bg-orange-200 border border-black">BOX4</div>
+        <div class=" bg-orange-200 border border-black">BOX4</div>
+        <div class=" bg-orange-200 border border-black">BOX4</div>
+        <div class=" bg-orange-200 border border-black">BOX4</div>
+        <div class=" bg-orange-200 border border-black">BOX4</div>
+        <div class=" bg-orange-200 border border-black">BOX4</div>
+        <div class=" bg-orange-200 border border-black">BOX4</div>
+        <div class=" bg-orange-200 border border-black">BOX4</div>
+        <div class=" bg-orange-200 border border-black">BOX4</div>
+        
+    </div>
+    <br>
+
+    <div class="h-[200px] bg-black grid grid-cols-14">
+        <div class=" bg-red-200">BOX1</div>
+        <div class=" bg-blue-200">BOX2</div>
+        <div class=" bg-green-200">BOX3</div>
+        <div class=" bg-purple-500">BOX4</div>
+    </div>
+    <br>
+
+    <div class="h-[200px] grid grid-cols-12">
+        <div class=" bg-red-200 col-span-2">BOX1</div>
+        <div class=" bg-blue-200">BOX2</div>
+        <div class=" bg-green-200">BOX3</div>
+        
+    </div>
+    <br>
+
+
+    <div class="h-auto grid grid-cols-12 gap-4 p-4">
+        <div class=" bg-red-200 col-span-8 border rounded-md py-2 border-black ">BOX1</div>
+        <div class=" bg-blue-800 col-span-4 border rounded-md py-2 border-black ">BOX2</div>
+        <div class=" bg-green-700 col-span-3 border rounded-md py-2 border-black">BOX3</div>
+        <div class=" bg-orange-600 border col-span-5 rounded-md py-2 border-black">BOX4</div>
+        <div class=" bg-orange-500 border col-span-2 rounded-md py-2 border-black">BOX5</div>
+        <div class=" bg-orange-400 border col-span-2 rounded-md py-2 border-black">BOX6</div>
+        <div class=" bg-orange-300 border col-span-12 rounded-md py-2 border-black">BOX7</div>
+        <div class=" bg-orange-900 border col-span-2 rounded-md py-2 border-black">BOX8</div>
+       
+    </div>
+    <br>
+
+    <div class="2xl:container mx-auto">
+        <div class="w-[80%] mx-auto grid grid-cols-3 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 h-[200px]">
+            <div class=" bg-slate-500 border rounded-md py-2 border-black">box1</div>
+            <div class=" bg-slate-800 border rounded-md py-2 border-black">box2</div>
+            <div class=" bg-slate-300 border rounded-md py-2 border-black">box3</div>
+
+        </div>
+
+    </div>
+
     
+    
+   <!--- <div class=" grid grid-cols-3 gap-4">
+        <div class="bg-teal-600">1</div>
+        <div class="bg-green-600"></div>
+        <div class="bg-violet-400"></div>
+    </div>
+    <div class="grid grid-cols-3 gap-4">
+        <div class="bg-red-300 col-span-2">I span 2 columns</div>
+        <div class="bg-green-300">I am  in 3rd column</div>
+    </div>
+
+    <div class="grid grid-cols-2 grid-rows-2 gap-4">
+        <div class="bg-purple-300 row-span-2">I span 2 rows</div>
+        <div class="bg-blue-300">Top Right</div>
+        <div class="bg-blue-700">Bottom Right</div>
+    </div>
+
+    ->
+
+
+
 </body>
 </html>

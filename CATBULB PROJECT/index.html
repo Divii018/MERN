@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAT BULB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class=" bg-black ">   
+
+    <div class="flex flex-col items-center py-6">
+        <img id="bulboff" src="https://ik.imagekit.io/v3gxqmx5z/CATBULB%20PROJECT/bulb-go-off-img.webp?updatedAt=1751612729929" alt="bulb-go-off-img" 
+        class="w-[300px] h-[350px]  ">
+
+        <img id="cateyes" src="https://ik.imagekit.io/v3gxqmx5z/CATBULB%20PROJECT/cat-eyes-img.webp?updatedAt=1751612729922" alt="cat-eyes-img"
+        class="w-[400px] h-[400px] -ml-6 ">    
+
+        <div class="flex space-x-10 py-12">
+            <button id="onBtn" class="text-white bg-green-700 rounded-lg px-8 py-2 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-green-500 ">
+                ON
+            </button>
+
+            <button id="offBtn" class="text-white  bg-red-700 rounded-lg px-8 py-2 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-red-500">
+                OFF
+            </button>
+        </div>
+
+    </div>
+
+    <script>
+        const mybulb= document.getElementById("bulboff");
+        const mycat= document.getElementById("cateyes");
+        const myonBtn= document.getElementById("onBtn");
+        const myoffBtn= document.getElementById("offBtn");
+
+        console.dir(mybulb);
+        console.dir(mycat);
+        console.dir(myonBtn);
+        console.dir(myoffBtn);
+
+        myonBtn.addEventListener("click", ()=>{
+            mybulb.src="https://ik.imagekit.io/v3gxqmx5z/CATBULB%20PROJECT/bulb-go-on-img.webp?updatedAt=1751612730080";
+            mycat.src="https://ik.imagekit.io/v3gxqmx5z/CATBULB%20PROJECT/cat-img.webp?updatedAt=1751612729933";
+        })
+         myoffBtn.addEventListener("click", ()=>{
+            mybulb.src="https://ik.imagekit.io/v3gxqmx5z/CATBULB%20PROJECT/bulb-go-off-img.webp?updatedAt=1751612729929";
+            mycat.src="https://ik.imagekit.io/v3gxqmx5z/CATBULB%20PROJECT/cat-eyes-img.webp?updatedAt=1751612729922";
+        })
+    </script>
+
+    
+</body>
+</html>
